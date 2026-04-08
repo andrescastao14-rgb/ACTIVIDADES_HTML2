@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio CSS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0e6226;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            color: #00c2a8;
+        }
+
+        .principal {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background-color: #0d5132;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mi Sitio Web</h1>
+</header>
+
+<section class="principal">
+    <h2>Bienvenidos</h2>
+    <p>Este es un ejemplo de maquetación web.</p>
+</section>
+
+<section class="cards">
+
+    <a href="hoja_de_vida.html" class="card">
+        <h3>Hoja de vida</h3>
+    </a>
+
+    <a href="formulario.html" class="card">
+        <h3>Formulario</h3>
+    </a>
+
+    <a href="formulariov2.html" class="card">
+        <h3>formulario v3</h3>
+    </a>
+
+    <div class="card">
+        <h3>Servicio 3</h3>
+    </div>
+
+</section>
+
+<footer>
+    <p>Universidad de Cundinamarca</p>
+</footer>
+
+</body>
+</html>
